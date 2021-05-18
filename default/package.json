@@ -1,0 +1,59 @@
+{
+	"name": "svere-component",
+	"version": "1.0.0",
+	"description": "A template for svelte component can run everywhere.",
+	"svelte": "dist/index.js",
+	"module": "dist/index.mjs",
+	"main": "dist/index.js",
+	"files": [
+		"dist"
+	],
+	"keywords": [
+		"svelte",
+		"component",
+		"library"
+	],
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/FE-PIRL/svere-component.git"
+	},
+	"scripts": {
+		"dev": "rollup -c -w",
+		"start": "sirv public",
+		"build": "rollup -c rollup.config.com.js",
+		"test": "start-server-and-test dev http://localhost:5000 cy:run",
+		"cy:open": "cypress open",
+		"cy:run": "cypress run",
+		"storybook": "start-storybook -p 6006",
+		"build-storybook": "build-storybook",
+		"lint": "npm run lint:js && npm run lint:css && npm run lint:format",
+		"lint:js": "eslint src --fix --ext .js,.jsx,.ts,.tsx,.svelte --cache --cache-location node_modules/.cache/eslint/",
+		"lint:css": "stylelint --fix \"src/**/*.{less,postcss,css,scss,svelte}\" --cache --cache-location node_modules/.cache/stylelint/",
+		"lint:format": "prettier --write  \"src/**/*.{js,json,ts,tsx,svelte,css,less,scss,html,md}\""
+	},
+	"devDependencies": {
+		"@rollup/plugin-commonjs": "19.0.0",
+		"@rollup/plugin-node-resolve": "13.0.0",
+		"@rollup/plugin-typescript": "8.2.1",
+		"@storybook/addon-actions": "6.2.9",
+		"@storybook/addon-essentials": "6.2.9",
+		"@storybook/addon-links": "6.2.9",
+		"@storybook/svelte": "6.2.9",
+		"@testing-library/cypress": "7.0.6",
+		"@tsconfig/svelte": "^1.0.0",
+		"code-specification-unid": "1.0.7",
+		"cypress": "7.2.0",
+		"node-sass": "6.0.0",
+		"rollup": "2.47.0",
+		"rollup-plugin-css-only": "3.1.0",
+		"rollup-plugin-livereload": "2.0.0",
+		"rollup-plugin-svelte": "7.1.0",
+		"sirv-cli": "1.0.11",
+		"start-server-and-test": "1.12.1",
+		"svelte": "3.38.2",
+		"svelte-loader": "3.1.1",
+		"svelte-preprocess": "4.7.3",
+		"typescript": "^4.2.4"
+	}
+}

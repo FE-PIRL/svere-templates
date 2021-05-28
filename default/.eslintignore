@@ -1,3 +1,2 @@
 public
-rollup.config.js
-rollup.config.com.js
+svelte-preprocess.config.js

@@ -38,6 +38,7 @@
 		"@storybook/addon-actions": "6.2.9",
 		"@storybook/addon-essentials": "6.2.9",
 		"@storybook/addon-links": "6.2.9",
+		"@storybook/addon-postcss": "2.0.0",
 		"@storybook/svelte": "6.2.9",
 		"@testing-library/cypress": "7.0.6",
 		"@tsconfig/svelte": "^1.0.0",

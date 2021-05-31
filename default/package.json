@@ -1,6 +1,6 @@
 {
 	"name": "svere-component",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "A template for svelte component can run everywhere.",
 	"svelte": "dist/index.js",
 	"module": "dist/index.mjs",
@@ -22,19 +22,13 @@
 		"dev": "svere dev",
 		"build": "svere build",
 		"test": "svere test",
-		"doc": "svere doc",
-		"doc:build": "svere doc -b",
-		"lint": "npm run lint:js && npm run lint:css && npm run lint:format",
-		"lint:js": "eslint src --fix --ext .js,.jsx,.ts,.tsx,.svelte --cache --cache-location node_modules/.cache/eslint/",
-		"lint:css": "stylelint --fix \"src/**/*.{less,postcss,css,scss,svelte}\" --cache --cache-location node_modules/.cache/stylelint/",
-		"lint:format": "prettier --write  \"src/**/*.{js,json,ts,tsx,svelte,css,less,scss,html,md}\""
+		"lint": "svere lint",
+		"doc": "svere doc"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.14.3",
-		"@testing-library/cypress": "7.0.6",
 		"@tsconfig/svelte": "^1.0.0",
 		"babel-loader": "^8.2.2",
-		"code-specification-unid": "1.0.7",
 		"svelte": "^3.38.2",
 		"svelte-loader": "^3.1.1",
 		"svelte-preprocess": "4.7.3",

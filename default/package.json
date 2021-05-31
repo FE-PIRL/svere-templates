@@ -19,7 +19,7 @@
 		"url": "git+https://github.com/FE-PIRL/svere-component.git"
 	},
 	"scripts": {
-		"dev": "svere dev",
+		"start": "svere start",
 		"build": "svere build",
 		"test": "svere test",
 		"lint": "svere lint",

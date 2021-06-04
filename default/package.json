@@ -26,9 +26,7 @@
 		"doc": "svere doc"
 	},
 	"devDependencies": {
-		"@babel/core": "^7.14.3",
 		"@tsconfig/svelte": "^1.0.0",
-		"babel-loader": "^8.2.2",
 		"svelte": "^3.38.2",
 		"svelte-loader": "^3.1.1",
 		"svelte-preprocess": "4.7.3",
